@@ -8,18 +8,13 @@ int main (){
 	ofstream dest;
 	source.open("cheerbook.txt") ;
 	dest.open("cheerbook_copy.txt");
-	
-	dest << "-------------------- BOOM ---------------------\n";
-	dest << "AR CHI\n";
-	dest << "AR BOW\n";
-	dest << "CHOW CHOW\n";
-	dest << "BA KA\n";
-	dest << "BA GEAR\n";
-	dest << "CHEER CHEER\n";
-	dest << "WE ARE ALL\n";
-	dest << "ENTANEER\n";
-	dest << "CMU\n";
-	dest << "-------------------- HA!! ---------------------";
+
+	string text;
+	cout << "-------------------- BOOM ---------------------\n";
+	while (getline(source,text)){
+	cout << text << endl;
+	}
+	cout << "-------------------- HA!! ---------------------";
 
     source.close();
     dest.close();
